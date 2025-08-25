@@ -1,0 +1,8 @@
+.todo-app {
+  margin-top: 20px;
+}
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
