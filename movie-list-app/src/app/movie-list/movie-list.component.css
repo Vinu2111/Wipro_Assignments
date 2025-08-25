@@ -1,0 +1,62 @@
+h1 {
+  text-align: center;
+  color: #3f51b5;
+  margin-bottom: 20px;
+}
+
+.average-rating {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 8px;
+  color: #3f51b5;
+  font-weight: 500;
+}
+
+.filter-dropdown {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.movies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie-card {
+  max-width: 350px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+mat-card-content h2 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+mat-card-content p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.stars {
+  display: flex;
+  margin-top: 10px;
+  color: #fbc02d;
+}
