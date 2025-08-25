@@ -1,0 +1,13 @@
+<mat-card [ngClass]="{'top-rated': movie.rating === 5}">
+  <img mat-card-image [src]="movie.poster" alt="{{ movie.title }}" />
+  <mat-card-title>{{ movie.title }}</mat-card-title>
+  <mat-card-subtitle>{{ movie.genre }}</mat-card-subtitle>
+  <mat-card-content>
+    <p>{{ movie.description }}</p>
+    <div class="stars">
+      <mat-icon *ngFor="let filled of stars">
+        {{ filled ? 'star' : 'star_border' }}
+      </mat-icon>
+    </div>
+  </mat-card-content>
+</mat-card>

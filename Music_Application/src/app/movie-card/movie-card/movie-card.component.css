@@ -1,0 +1,17 @@
+mat-card {
+  border-radius: 12px;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+mat-card:hover {
+  transform: scale(1.03);
+}
+
+.top-rated {
+  border: 2px solid gold;
+}
+
+.stars {
+  color: gold;
+}

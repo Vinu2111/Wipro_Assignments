@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+  🎬 Movie List App
+  <span class="spacer"></span>
+  <span>⭐ Avg Rating: {{ averageRating }}</span>
+</mat-toolbar>
+
+<div class="filter">
+  <mat-form-field>
+    <mat-label>Filter by Genre</mat-label>
+    <mat-select [(ngModel)]="selectedGenre">
+      <mat-option *ngFor="let genre of genres" [value]="genre">{{ genre }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="grid">
+  <app-movie-card *ngFor="let movie of filteredMovies" [movie]="movie"></app-movie-card>
+</div>
